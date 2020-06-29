@@ -1,0 +1,25 @@
+body{
+    background-image: url(https://wallpapercave.com/wp/wp5035175.jpg);
+    background-size: 100%;
+    
+   }
+   .card{
+       float: right; 
+       margin: 10px;
+   }
+
+   .list-group li:hover {
+       background-color: #42aaf5;
+       color: #fff;
+       transform: scale(1.1);
+   }
+   .navbar{
+       background-color: #fff !important;
+    
+   }
+   div.card-header{
+       background-color: #47abba;
+       color: white;
+       font-family: Courier New;
+
+   }
