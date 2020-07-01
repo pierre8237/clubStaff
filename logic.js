@@ -1,30 +1,43 @@
-// Get 
-var Service = document.querySelector('#service');
-var instructor = document.querySelector('#instructor');
-var date = document.querySelector('#date');
-var memeberName = document.querySelector('#member');
-service.addEventListener('submit', function (event) {
+var name = {
+	name: " ", 
+	activity: " ",
 
-	// Don't submit the form
-	event.preventDefault();
-
-	// Ignore it if the wishlist item is empty
-	if (service.value.length < 1) return;
-    // save everything to local storage
-	localStorage.setItem('wishlistItems', wishlist.innerHTML);
-    
-	// Add info to modal
-
-	// Save the list to localStorage
-
-}, false);
-
-// Check for saved items
-var saved = localStorage.getItem('service');
-var saved = localStorage.getItem('instructor');
-var saved = localStorage.getItem('date');
-var saved = localStorage.getItem('member');
-// If there are any saved items, update our list
-if (saved) {
-	service.innerHTML = saved;
 }
+
+
+
+
+function ReturnScheduleDetails() {
+
+	var serviceType = document.getElementById('ServiceType');
+	var serviceTypeValue = serviceType.value;
+   // alert(serviceTypeValue);
+	document.getElementById('ServiceField').innerHTML= "Type of Service: " + serviceTypeValue;
+   // document.getElementById("demo").innerHTML = "Hello World";
+
+   //Get instructor info
+	var instructorType = document.getElementById('instructor');
+	var instructorTypeValue = instructorType.value;
+	document.getElementById('InstructorField').innerHTML= "Instructor: " + instructorTypeValue;
+
+	 //Get Month info
+	var monthType = document.getElementById('month');
+	var monthTypeValue = monthType.value;
+	//document.getElementById('MonthField').innerHTML= "MonthField: " + monthTypeValue;
+
+	//Get Day info
+	var dayType = document.getElementById('day');
+	var dayTypeValue = dayType.value;
+	//document.getElementById('DayField').innerHTML= "DayField: " + dayTypeValue;
+
+	//Get year info
+	var yearType = document.getElementById('year');
+	var yearTypeValue = yearType.value;
+	//document.getElementById('YearField').innerHTML= "YearField: " + yearTypeValue;
+	document.getElementById("MonthDayYear").innerHTML = "Date: " + monthTypeValue +" " + dayTypeValue + ", " + yearTypeValue;
+
+	//Get timeslot info
+	var timeSlotType = document.getElementById('timeslot');
+	var timeTypeValue = timeSlotType.value;
+	document.getElementById('TimeField').innerHTML= "Time Slot: " + timeTypeValue;
+  }

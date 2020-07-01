@@ -1,37 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Scheduling</title>
-    <!-- CSS only -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scheduling</title>
+  <!-- CSS only -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
     integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <link rel='stylesheet' href ='./main.css'>
-    <link rel='logic' href ='./logic.js'>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-       
-    <title>Club Staff</title>
+  <link rel='stylesheet' href='./main.css'>
+  <!-- <link rel='logic' href ='./logic.js'> -->
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+  
+  <title>Club Staff</title>
 </head>
+
 <body>
   <nav class="navbar navbar-light bg-light">
     <a class="navbar-brand" href="index.html">
-      <img src="https://images.fineartamerica.com/images/artworkimages/mediumlarge/2/deer-art-print-navy-blue-deer-poster-deer-head-painting-home-decor-minimalist-silhouette-part-2-joanna-szmerdt.jpg" width="50" height="50">
-      <span> Welcome to Meritt Hunt Club </span></a>
-      <button type="button" class="btn btn-primary" style="margin-right: 0.4cm;">About our Staff
-      <a href = "ClubStaff.html"></a> 
+      <img
+      src="https://images.fineartamerica.com/images/artworkimages/mediumlarge/2/deer-art-print-navy-blue-deer-poster-deer-head-painting-home-decor-minimalist-silhouette-part-2-joanna-szmerdt.jpg"
+        width="50" height="50">
+        <span> Welcome to Meritt Hunt Club </span></a>
+    <button type="button" class="btn btn-primary" style="margin-right: 0.4cm;">About our Staff
+      <a href="ClubStaff.html"></a>
     </button>
-
+    
     <button type="button" class="btn btn-primary">Schedule A Service
-        <a href = "Scheduling.html"></a> 
-      </button>
+      <a href="Scheduling.html"></a>
+    </button>
   </nav>
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script> -->
   
-  <div class="shadow-lg p-3 mb-5 bg-white rounded"
-  style="
+  <div class="shadow-lg p-3 mb-5 bg-white rounded" style="
   margin-top: 9rem;
   margin-left: 32rem;
   margin-right: 35rem;
@@ -39,163 +42,172 @@
   display: block;
   width: 36rem;
   height:35.5rem;">
-<br>
-<br>
-    <p style="margin-left: 1cm;"> Name of Member Making the reservation</p>
-    <form>
-        <input style="margin-left: 1cm;" type="text">
-    </form>
-<br>
+    <br>
+    <br>
+ <form id="service" style="margin-left: 1cm;">
+    <p class="memberLabel" style="margin-left: 1cm;"> Name of Member Making the reservation</p>
+      <input id="member" style="margin-left: 1cm;" type="text">
+    <br>
     <p style="margin-left: 1cm;"> what Kind of Service would you like to Schedule</p>
-      <form id= "service" style="margin-left: 1cm;">
-          <select>
-              <option id="kayaking">Kayaking</option>
-              <option id="hunting">Hunting Party</option>
-              <option id="tennis">Tennis Lesson</option>
-              <option id="other">Other</option>
-        </select>
-    </form>
-<br>
-    <p style="margin-left: 1cm;">Instructor</p>
-    <form id= "instructor" style="margin-left: 1cm;">
-        <select>
-            <option> Instructor Name</option>
-            <option>Instructor Name</option>
-            <option>Instructor Name</option>
-            <option>Instructor Name</option>
-            <option>Instructor Name</option>
-            <option>Instructor Name</option>
-            <option>Instructor Name</option>
-      </select>
-  </form>
-<br>  
-  <p style="margin-left: 1cm;">Please select Date</p>
-  <form id= "date" style="margin-left: 1cm;">
-      <select>
-          <option> January</option>
-          <option>February</option>
-          <option>March</option>
-          <option>April</option>
-          <option>June</option>
-          <option>July</option>
-          <option>August</option>
-          <option>September</option>
-          <option>October</option>
-          <option>November</option>
-          <option>December</option>
-    </select>
-    <select>
-        <option> 1</option>
-        <option> 2</option>
-        <option> 3</option>
-        <option> 4</option>
-        <option> 5</option>
-        <option> 6</option>
-        <option> 7</option>
-        <option> 8</option>
-        <option> 9</option>
-        <option> 10</option>
-        <option> 11</option>
-        <option> 12</option>
-        <option> 13</option>
-        <option> 14</option>
-        <option> 15</option>
-        <option> 16</option>
-        <option> 17</option>
-        <option> 18</option>
-        <option> 19</option>
-        <option> 20</option>
-        <option> 21</option>
-        <option> 22</option>
-        <option> 23</option>
-        <option> 24</option>
-        <option> 25</option>
-        <option> 26</option>
-        <option> 27</option>
-        <option> 28</option>
-        <option> 29</option>
-        <option> 30</option>
-        <option> 31</option>
-  </select>
-  <select>
-    <option> 2020</option>
-    <option> 2021</option>
-    <option> 2022</option>
-    <option> 2023</option>
-    <option> 2024</option>
-    <option> 2025</option>
-    <option> 2026</option>
-</select>
-</form>
-<br>
-  <p style="margin-left: 1cm;"> what timeslot </p>
-  <form id="timeslot" style="margin-left: 1cm;">
-      <select>
-          <option>09:00 am </option>
-          <option>9:30 am </option>
-          <option>10:00 am </option>
-          <option>10:30 am </option>
-          <option>11:00 am </option>
-          <option>11:30 am </option>
-          <option>12:00 pm </option>
-          <option>12:30 pm </option>
-          <option>01:00 pm </option>
-          <option>01:30 pm </option>
-          <option>02:00 pm </option>
-          <option>02:30 pm </option>
-          <option>03:00 pm </option>
-          <option>03:30 pm </option>
-          <option>04:00 pm </option>
-          <option>04:30 pm </option>
-          <option>05:00 pm </option>
-          <option>05:30 pm </option>
-          <option>06:00 pm </option>
-          <option>06:30 pm </option>
-          <option>07:00 pm </option>
-          <option>07:30 pm </option>
-          <option>08:00 pm </option>
-    </select>
-</form>
+      <select id="ServiceType" style="margin-left: 1cm;">
+        <option value= "Kayaking">Kayaking</option>
+        <option value= "Hunting Party">Hunting Party </option>
+        <option value= "Tennis Lesson"> Tennis Lesson</option>
+        <option value= "Other">Other</option>
 
-<!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" style="margin-top: 0.5cm; margin-left: 11.5cm;">
+      <!--   <option id="kayaking">Kayaking</option>
+       <option id="hunting">Hunting Party</option> 
+      <option id="tennis">Tennis Lesson</option> 
+       <option id="other">Other</option> -->
+      </select> 
+    <br>
+    <p style="margin-left: 1cm;">Instructor</p>
+      <select id="instructor" style="margin-left: 1cm;">
+        <option value= "John"> John</option> 
+        <option value="Instructor Name"> Instructor Name</option>
+        <option value="Instructor Name"> Instructor Name</option>
+        <option value="Instructor Name"> Instructor Name</option>
+        <option value="Instructor Name"> Instructor Name</option>
+        <option value="Instructor Name"> Instructor Name</option>
+        <option value="Instructor Name"> Instructor Name</option>
+      </select>
+    <br>
+    <p style="margin-left: 1cm;">Please select Date</p>
+      <select id="month" style="margin-left: 1cm;">
+        <option value= "January">January</option>
+        <option value= "February">February</option>
+        <option value= "March">March</option>
+        <option value= April>April</option>
+        <option value="June">June</option>
+        <option value="July">July</option>
+        <option value="August">August</option>
+        <option value="September">September</option>
+        <option value="October">October</option>
+        <option value="November">November</option>
+        <option value="December">December</option>
+      </select>
+
+      <select id="day">
+        <option value= "1">1</option>
+        <option value= "2">2</option>
+        <option value= "3">3</option>
+        <option value= "4">4</option>
+        <option value= "5">5</option>
+        <option value= "6">6</option>
+        <option value= "7">7</option>
+        <option value= "8">8</option>
+        <option value= "9">9</option>
+        <option value= "10">10</option>
+        <option value= "11">11</option>
+        <option value= "12">12</option>
+        <option value= "13">13</option>
+        <option value= "14">14</option>
+        <option value= "15">15</option>
+        <option value= "16">16</option>
+        <option value= "17">17</option>
+        <option value= "18">18</option>
+        <option value= "19">19</option>
+        <option value= "20">20</option>
+        <option value= "21">21</option>
+        <option value= "22">22</option>
+        <option value= "23">23</option>
+        <option value= "24">24</option>
+        <option value= "25">25</option>
+        <option value= "26">26</option>
+        <option value= "27">27</option>
+        <option value= "28">28</option>
+        <option value= "29">29</option>
+        <option value= "30">30</option>
+        <option value= "31">31</option>
+      </select>
+      <select id="year">
+        <option value= "2020">2020</option>
+        <option value= "2021">2021</option>
+        <option value= "2022">2022</option>
+        <option value= "2023">2023</option>
+        <option value= "2024">2024</option>
+        <option value= "2025">2025</option>
+        <option value= "2026">2026</option>
+      </select>
+    <br>
+    <p style="margin-left: 1cm;"> what timeslot </p>
+    <select id="timeslot" style="margin-left: 1cm;">
+        <option value= "9:00 am">9:00 am</option>
+        <option value= "9:30 am">9:30 am</option>
+        <option value= "10:00 am">10:00 am</option>
+        <option value= "10:30 am">10:30 am</option>
+        <option value= "11:00 am">11:00 am</option>
+        <option value= "11:30 am">11:30 am</option>
+        <option value= "12:00 pm">12:00 pm</option>
+        <option value= "12:30 pm">12:30 pm</option>
+        <option value= "1:00 pm">1:00 pm</option>
+        <option value= "1:00 pm">1:30 pm</option>
+        <option value= "2:00 pm">2:00 pm</option>
+        <option value= "2:30 pm">2:30 pm</option>
+        <option value= "3:00 pm">3:00 pm</option>
+        <option value= "3:30 pm">3:30 pm</option>
+        <option value= "4:00 pm">4:00 pm</option>
+        <option value= "4:30 pm">4:30 pm</option>
+        <option value= "5:00 pm">5:00 pm</option>
+        <option value= "5:30 pm">5:30 pm</option>
+        <option value= "6:00 pm">6:00 pm</option>
+        <option value= "6:30 pm">6:30 pm</option>
+        <option value= "7:00 pm">7:00 pm</option>
+        <option value= "7:30 pm">7:30 pm</option>
+        <option value= "8:00 pm">8:00 pm</option>
+      </select>
+    </form>
+
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal"
+    style="margin-top: 0.5cm; margin-left: 11.5cm;" onclick=" ReturnScheduleDetails()">
     Submit
   </button>
   
-  <!-- Modal -->
-  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Review Details</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div id="modalBody" style="width: 5cm; height: 4cm;">
-        
-        </div>
-        <div id="modalFooter">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal" style=" margin-left: 0.3cm; margin-bottom: 0.7cm;">Close</button>
-          <button type="button" class="btn btn-primary" style="margin-bottom: 0.7cm; margin-left: 0.3cm;"> Confirm Reservation</button>
+  <!-- Button trigger modal -->
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Review Details</h5>
+
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div id="modalBody" style="width: 5cm; height: 4cm;">
+            
+
+            <div id=ServiceField>Servicetype: Default</div> 
+            <div id=InstructorField>Instructor: Default</div> 
+            <div id=MonthDayYear>MonthDayYear: Default</div>
+            <div id=TimeField>Time: Default</div>
+
+          </div>
+          <div id="modalFooter">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal"
+              style=" margin-left: 0.3cm; margin-bottom: 0.7cm;">Close</button>
+              <button type="button" class="btn btn-primary" style="margin-bottom: 0.7cm; margin-left: 0.3cm;"> Confirm
+              Reservation</button> 
+          </div>
         </div>
       </div>
     </div>
-</div>
+    
 
-</body>
-  
-  </html>
-
-
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
-</script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+      </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
     integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
-</script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
-</script>
+      </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+      </script>
+      <script src="./logic.js"></script>
+  </div>
 </body>
+
 </html>
