@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kayaking</title>
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel='stylesheet' href ='./main.css'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+       
+</head>
+<body>
+
+    <nav class="navbar navbar-light bg-light">
+        <a class="navbar-brand" href="ClubStaff.html">
+          <img
+          src="https://images.fineartamerica.com/images/artworkimages/mediumlarge/2/deer-art-print-navy-blue-deer-poster-deer-head-painting-home-decor-minimalist-silhouette-part-2-joanna-szmerdt.jpg"
+            width="50" height="50">
+            <span> Welcome to Meritt Hunt Club </span></a>
+            <a class="btn btn-primary" href="Bio.html" role="button" style="margin-right: 0.5cm;">Our Staff & Contact</a>
+            <a class="btn btn-primary" href="Scheduling.html" role="button" style="margin-right: 0.5cm;">Schedule a Service</a>
+      </nav>
+      
+
+        <!-- Start of container -->
+        <div style="padding-top: 5em; float: left; clear: both;" class="container">
+
+            <div class="row">
+      
+                <div class="col-xl-8 offset-xl-2 py-5">
+      
+                    <h1 style="color: white;"> Inquiries</h1>
+      
+                    <p style="color: white;" class="lead"> Let's Get in Touch.</p>
+      
+                    <!-- contact form Starts here  -->
+                    <form id="contact-form" method="post" action="contact.php" role="form">
+      
+                      <div class="messages"></div>
+                  
+                      <div class="controls">
+                  
+                          <div class="row">
+                              <div class="col-md-6">
+                                  <div class="form-group">
+                                      <label style="color:  white; font-weight: bolder; "for="form_name">Firstname *</label>
+                                      <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your firstname *" required="required" data-error="Firstname is required.">
+                                      <div class="help-block with-errors"></div>
+                                  </div>
+                              </div>
+                              <div class="col-md-6">
+                                  <div class="form-group">
+                                      <label style="color:  white; font-weight: bolder;" for="form_lastname">Lastname *</label>
+                                      <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Please enter your lastname *" required="required" data-error="Lastname is required.">
+                                      <div class="help-block with-errors"></div>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="row">
+                              <div class="col-md-6">
+                                  <div class="form-group">
+                                      <label style="color:  white; font-weight: bolder;" for="form_email">Email *</label>
+                                      <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *" required="required" data-error="Valid email is required.">
+                                      <div class="help-block with-errors"></div>
+                                  </div>
+                              </div>
+                              <div class="col-md-6">
+                                  <div class="form-group">
+                                      <label style="color:  white; font-weight: bolder;" for="form_need">Please specify your need *</label>
+                                      <select id="form_need" name="need" class="form-control" required="required" data-error="Please specify your need.">
+                                          <option value=""></option>
+                                          <option style="color: black;" value="Request quotation">membership issue</option>
+                                          <option style="color: black;" value="Request order status"> Billing </option>
+                                          <option style="color: black;" value="Request copy of an invoice"> other </option>
+                                          <option style="color: black;" value="Other">General Feedback</option>
+                                      </select>
+                                      <div class="help-block with-errors"></div>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="row">
+                              <div class="col-md-12">
+                                  <div class="form-group">
+                                      <label style="color:  white; font-weight: bolder; " for="form_message">Message *</label>
+                                      <textarea id="form_message" name="message" class="form-control" placeholder="Message for me *" rows="4" required="required" data-error="Please, leave us a message."></textarea>
+                                      <div class="help-block with-errors"></div>
+                                  </div>
+                              </div>
+                              <div class="col-md-12">
+                                  <input type="submit" class="btn btn-success btn-send" value="Send message"  > 
+                              </div>
+                          </div>
+                          <div class="row">
+                              <div class="col-md-12">
+                                  <p style="color: white; font-weight: bolder; padding-top: 1rem;">
+                                      <strong style="color: white;">*</strong> These fields are required
+                                    </p>
+                              </div>
+                          </div>
+                      </div>
+                  </form>
+                </div>
+            </div>
+          <!-- End of container -->
+
+
+
+  
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+</script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+</script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+</script>
+</body>
+</html>

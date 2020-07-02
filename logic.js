@@ -1,14 +1,11 @@
-var name = {
-	name: " ", 
-	activity: " ",
-
-}
-
-
-
 
 function ReturnScheduleDetails() {
 
+	//Get Member info
+	var MemberNameValue = document.getElementById('member');
+	var MemberNameValue = MemberNameValue.value;
+	document.getElementById('MemberNameValue').innerHTML= " Member : " + MemberNameValue;
+ 
 	var serviceType = document.getElementById('ServiceType');
 	var serviceTypeValue = serviceType.value;
    // alert(serviceTypeValue);

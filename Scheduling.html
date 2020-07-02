@@ -16,25 +16,34 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-light bg-light">
-    <a class="navbar-brand" href="index.html">
+   <nav class="navbar navbar-light bg-light">
+    <a class="navbar-brand" href="ClubStaff.html">
       <img
       src="https://images.fineartamerica.com/images/artworkimages/mediumlarge/2/deer-art-print-navy-blue-deer-poster-deer-head-painting-home-decor-minimalist-silhouette-part-2-joanna-szmerdt.jpg"
         width="50" height="50">
         <span> Welcome to Meritt Hunt Club </span></a>
-    <button type="button" class="btn btn-primary" style="margin-right: 0.4cm;">About our Staff
-      <a href="ClubStaff.html"></a>
-    </button>
-    
-    <button type="button" class="btn btn-primary">Schedule A Service
-      <a href="Scheduling.html"></a>
-    </button>
+        <a class="btn btn-primary" href="Bio.html" role="button" style="margin-right: 0.5cm;">Our Staff & Contact</a>
+        <a class="btn btn-primary" href="Scheduling.html" role="button" style="margin-right: 0.5cm;">Schedule a Service</a>
   </nav>
+
+  <div class="card" style="width:18rem;">
+    <div class="card-header">
+        Today's Activities
+    </div>
+    <ul class="list-group list-group-flush">
+      <li  class="list-group-item">  <a href = "Kayaking.html"> Kayaking</a></li>
+      <li  class="list-group-item">  <a href = "Hunting.html">Hunting</a></li>
+      <li  class="list-group-item">  <a href = "Tennis.html">Tennis Lessons</a></li>
+      <li  class="list-group-item">  <a href = "Single-night.html">Single-Night</a></li>
+      <li  class="list-group-item">  <a href = "https://calendly.com/merrithuntclub/member-services?month=2020-07"target="blank"> Schedule an Event</a></li>
+      </ul>
+    </div>
+  
   
   <div class="shadow-lg p-3 mb-5 bg-white rounded" style="
   margin-top: 9rem;
-  margin-left: 32rem;
-  margin-right: 35rem;
+  margin-left: 25rem;
+  margin-right: 40rem;
   padding-top: 4rem;
   display: block;
   width: 36rem;
@@ -42,11 +51,11 @@
     <br>
     <br>
  <form id="service" style="margin-left: 1cm;">
-    <p class="memberLabel" style="margin-left: 1cm;"> Name of Member Making the reservation</p>
-      <input id="member" style="margin-left: 1cm;" type="text">
+    <p style="margin-left: 1cm;"> Name of Member</p>
+      <input id="member" style="margin-left: 1cm; margin-bottom: 0.3cm;" type=" ">
     <br>
     <p style="margin-left: 1cm;"> what Kind of Service would you like to Schedule</p>
-      <select id="ServiceType" style="margin-left: 1cm;">
+      <select id="ServiceType" style="margin-left: 1cm;margin-bottom: 0.3cm; ">
         <option value= "Kayaking">Kayaking</option>
         <option value= "Hunting Party">Hunting Party </option>
         <option value= "Tennis Lesson"> Tennis Lesson</option>
@@ -54,18 +63,18 @@
       </select> 
     <br>
     <p style="margin-left: 1cm;">Instructor</p>
-      <select id="instructor" style="margin-left: 1cm;">
+      <select id="instructor" style="margin-left: 1cm;margin-bottom: 0.3cm;">
         <option value= "John"> John</option> 
-        <option value="Instructor Name"> Instructor Name</option>
-        <option value="Instructor Name"> Instructor Name</option>
-        <option value="Instructor Name"> Instructor Name</option>
-        <option value="Instructor Name"> Instructor Name</option>
-        <option value="Instructor Name"> Instructor Name</option>
-        <option value="Instructor Name"> Instructor Name</option>
+        <option value="Noah"> Noah</option>
+        <option value="Aimee"> Aimee</option>
+        <option value="Josh"> Josh</option>
+        <option value="Mauricio"> Mauricio</option>
+        <option value="Max"> Max</option>
+        <option value="Sandra"> Sandra</option>
       </select>
     <br>
     <p style="margin-left: 1cm;">Please select Date</p>
-      <select id="month" style="margin-left: 1cm;">
+      <select id="month" style="margin-left: 1cm;margin-bottom: 0.3cm;">
         <option value= "January">January</option>
         <option value= "February">February</option>
         <option value= "March">March</option>
@@ -123,7 +132,7 @@
       </select>
     <br>
     <p style="margin-left: 1cm;"> what timeslot </p>
-    <select id="timeslot" style="margin-left: 1cm;">
+    <select id="timeslot" style="margin-left: 1cm;margin-bottom: 0.3cm;">
         <option value= "9:00 am">9:00 am</option>
         <option value= "9:30 am">9:30 am</option>
         <option value= "10:00 am">10:00 am</option>
@@ -170,18 +179,19 @@
           </div>
           <div id="modalBody" style="width: 5cm; height: 4cm;">
             
-
-            <div id=ServiceField>Servicetype: Default</div> 
-            <div id=InstructorField>Instructor: Default</div> 
-            <div id=MonthDayYear>MonthDayYear: Default</div>
-            <div id=TimeField>Time: Default</div>
+            <div style="margin-left: 0.2cm;" id=MemberNameValue>Member: Default</div>
+            <div style="margin-left: 0.2cm;" id=ServiceField>Service type: Default</div> 
+            <div style="margin-left: 0.2cm;" id=InstructorField>Instructor: Default</div> 
+            <div style="margin-left: 0.2cm;" id=MonthDayYear>Date: Default</div>
+            <div style="margin-left: 0.2cm;" id=TimeField>Time: Default</div>
 
           </div>
           <div id="modalFooter">
             <button type="button" class="btn btn-secondary" data-dismiss="modal"
               style=" margin-left: 0.3cm; margin-bottom: 0.7cm;">Close</button>
               <button type="button" class="btn btn-primary" style="margin-bottom: 0.7cm; margin-left: 0.3cm;"> Confirm
-              Reservation</button> 
+              Reservation</button>
+               
           </div>
         </div>
       </div>
