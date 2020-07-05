@@ -1,11 +1,21 @@
 body{
     background-image: url(https://wallpapercave.com/wp/wp5035175.jpg);
-    background-size: 100%;
-    
+    background-size: 127%;
+    display: flex;
+    min-height:100mh;
+    flex-direction: column;
    }
-   .card{
+   .container {
+       flex: 1;
+   }
+   .card {
        float: right; 
        margin: 10px;
+       margin-bottom: 84px;
+   }
+
+   #row {
+    margin-bottom: 32px;
    }
 
    .list-group li:hover {
@@ -23,7 +33,13 @@ body{
        background-color: #47abba;
        color: white;
        font-family: Courier New;
-
+    
+   }
+   .btn-primary {
+       background-color: #47abba;
+   }
+   .btn-primary:hover{
+       background-color: #47aaf5;
    }
 
    *{
@@ -122,4 +138,11 @@ body{
     color: #293251;
     text-align: center;
     font-size: 0.8em;
+}
+footer {
+    text-align: center;
+    padding: 4px;
+    background-color:#47ABBA;
+    color: white;
+    height: 32px;
 }
