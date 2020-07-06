@@ -1,67 +1,71 @@
-body{
+body {
     background-image: url(https://wallpapercave.com/wp/wp5035175.jpg);
     background-size: 127%;
-    display: flex;
-    min-height:100mh;
+    display: float;
+    min-height: 100mh;
     flex-direction: column;
-   }
-   .container {
-       flex: 1;
-   }
-   .card {
-       float: right; 
-       margin: 10px;
-       margin-bottom: 84px;
-   }
+}
 
-   #row {
+.container {
+    flex: 1;
+}
+
+.card {
+    float: right;
+    margin: 10px;
+    margin-bottom: 84px;
+}
+
+#row {
     margin-bottom: 32px;
-   }
+}
 
-   .list-group li:hover {
-       background-color: #42aaf5;
-       color: #fff;
-       transform: scale(1.1);
-   }
-   .navbar{
-       background-color: #fff !important;
-       display: grid;
-       grid-template-columns: 75% 12.5% 12.5%;
-    
-   }
-   div.card-header{
-       background-color: #47abba;
-       color: white;
-       font-family: Courier New;
-    
-   }
-   .btn-primary {
-       background-color: #47abba;
-   }
-   .btn-primary:hover{
-       background-color: #47aaf5;
-   }
+.list-group li:hover {
+    background-color: #42AAF5;
+    color: #fff;
+    transform: scale(1.1);
+}
 
-   *{
+.navbar {
+    background-color: #fff !important;
+    display: grid;
+    grid-template-columns: 75% 12.5% 12.5%;
+}
+
+div.card-header {
+    background-color: #47ABBA;
+    color: white;
+    font-family: Courier New;
+}
+
+.btn-primary {
+    background-color: #47ABBA;
+}
+
+.btn-primary:hover {
+    background-color: #47AAF5;
+}
+
+* {
     font-family: "Rimouski";
 }
-.main-weather-container{
-    width: 330px;    
+
+.main-weather-container {
+    width: 300px;
     background-color: #FFF;
     display: block;
-    margin:20px;
+    margin: 20px;
     border-radius: 10px;
-    padding-bottom : 50px;
-    margin-top: 200px;
+    padding-bottom: 50px;
 }
 
-.app-title{
+.app-title {
     width: 300px;
     height: 50px;
-    border-radius: 10px 10px 0 0;
+    border-radius: 10px;
 }
 
-.app-title p{
+.app-title p {
     text-align: center;
     padding: 15px;
     margin: 0 auto;
@@ -69,40 +73,46 @@ body{
     color: #293251;
 }
 
-.notification{
-    background-color: #f8d7da;
+.notification {
+    background-color: #F8D7DA;
     display: none;
 }
 
-.notification p{
-    color: #721c24;
+.location {
+    margin-bottom: 20px;
+}
+
+.notification p {
+    color: #721C24;
     font-size: 1.2em;
     margin: 0;
     text-align: center;
     padding: 10px 0;
 }
 
-.weather-container{
+.weather-container {
     width: 300px;
     height: 260px;
+    margin-bottom: -50px;
 }
 
-.weather-icon{
-    width: 300px;
+.weather-icon {
+    width: 18rem;
     height: 128px;
+    margin-bottom: 5px;
 }
 
-.weather-icon img{
+.weather-icon img {
     display: block;
     margin: 0 auto;
 }
 
-.temperature-value{
+.temperature-value {
     width: 300px;
-    height:60px;
+    height: 60px;
 }
 
-.temperature-value p{
+.temperature-value p {
     padding: 0;
     margin: 0;
     color: #293251;
@@ -111,20 +121,16 @@ body{
     cursor: pointer;
 }
 
-.temperature-value p:hover{
-    
-}
+.temperature-value p:hover {}
 
-.temperature-value span{
+.temperature-value span {
     color: #293251;
     font-size: 0.5em;
 }
 
-.temperature-description{
-    
-}
+.temperature-description {}
 
-.temperature-description p{
+.temperature-description p {
     padding: 8px;
     margin: 0;
     color: #293251;
@@ -132,17 +138,55 @@ body{
     font-size: 1.2em;
 }
 
-.location p{
+.location p {
     margin: 0;
     padding: 0;
     color: #293251;
     text-align: center;
     font-size: 0.8em;
 }
+
 footer {
     text-align: center;
     padding: 4px;
-    background-color:#47ABBA;
+    background-color: #47ABBA;
     color: white;
     height: 32px;
 }
+
+.welcome {
+    text-align: center;
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-bottom: 25px;
+    background-position: center left calc(50% - 271px);
+    padding: 60px 0 30px 0;
+}
+
+@media screen and (max-width: 550px) {
+    .welcome {
+        background-position: center left -999px;
+    }
+}
+
+.welcome h5 {
+    font-size: 28px;
+    color: #163049;
+    line-height: 28px;
+}
+
+.welcome h3 {
+    line-height: 23px;
+    margin: 0;
+}
+
+.welcome p {
+    max-width: 720px;
+    width: 100%;
+    padding: 30px 0 20px 0;
+}
+
+@media screen and (min-width: 720px) {
+    .welcome p {
+        margin-left: calc(50% - 360px)
