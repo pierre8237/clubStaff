@@ -1,13 +1,10 @@
 body{
     background-image: url(https://wallpapercave.com/wp/wp5035175.jpg);
     background-size: 127%;
-    display: flex;
+    display: float;
     min-height:100mh;
-    flex-direction: column;
    }
-   .container {
-       flex: 1;
-   }
+
    .card {
        float: right; 
        margin: 10px;
